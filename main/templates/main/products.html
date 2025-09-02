@@ -1,0 +1,183 @@
+{% extends "main/base.html" %} {% load static %} {% block title %}Products |
+Plastic Pallets SA{% endblock %} {% block content %}
+
+<!-- HERO BANNER -->
+<section
+  class="hero text-light text-center py-5"
+  style="
+    background: url('{% static 'main/images/warehouse-hero.jpg' %}') no-repeat
+      center center / cover;
+    position: relative;
+  "
+>
+  <div
+    style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    "
+  ></div>
+  <div class="container" style="position: relative; z-index: 2">
+    <h1 class="display-5 fw-bold">Our Pallets</h1>
+    <p class="lead">Built for durability and efficiency.</p>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories" class="py-3">
+  <div class="container">
+    <h2 class="text-center mb-5">Choose Your Pallet Type</h2>
+    <div class="row g-5 justify-content-center">
+      <!-- 1. Heavy Duty grid-->
+      <div class="col-md-4">
+        <div
+          class="card border-0 shadow-sm h-200 hover-lift transition"
+          style="height: 500px; display: flex; flexdirction: column"
+        >
+          <img
+            src="{% static 'main/images/heavy-duty-grid/aa1200x1000x150.jpg' %}"
+            alt="Heavy Duty grid Pallet"
+            class="card-img-top"
+            style="height: 280px; object-fit: cover; margin-bottom: 20px"
+          />
+          <img
+            src="{% static 'main/images/nestable/info2-chart.jpg' %}"
+            alt="nestable Pallet"
+            class="card-img-top img-fluid"
+            style="height: 50px; object-fit: cover"
+          />
+          <div class="card-body d-flex flex-column justify-content-end mt-auto">
+            <p class="text-mutedsmall text-center mb-2">
+              Reinforced--Reversible--Stackable--Rackable
+            </p>
+            <h5 class="card-title fw-bold">Heavy Duty grid</h5>
+            <a
+              href="{% url 'heavy_duty_grid' %}"
+              class="btn btn-success btn-lg w-100"
+              >View Pallets</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. light  grid -->
+      <div class="col-md-4">
+        <div
+          class="card border-0 shadow-sm h-200 hover-lift transition"
+          style="height: 500px; display: flex-direction: column;"
+        >
+          <img
+            src="{% static 'main/images/light-grid/e1200x1000x150.jpg' %}"
+            alt="light grid"
+            class="card-img-top img-fluid"
+            style="height: 280px; object-fit: cover"
+          />
+          <img
+            src="{% static 'main/images/nestable/info2-chart.jpg' %}"
+            alt="nestable Pallet"
+            class="card-img-top img-fluid"
+            style="height: 50px; object-fit: cover"
+          />
+          <div class="card-body d-flex flex-column justify-content-end mt-auto">
+            <h5 class="card-title fw-bold">Standard grid light duty</h5>
+            <a
+              href="{% url 'light_grid' %}"
+              class="btn btn-success btn-lg w-100"
+              >View Pallets</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. standard flat -->
+      <div class="col-md-4">
+        <div
+          class="card border-0 shadow-sm h-200 hover-lift transition"
+          style="height: 500px; display: flex-direction: column;"
+        >
+          <img
+            src="{% static 'main/images/light-flat/g1400x1200x150.jpg' %}"
+            alt="light flat"
+            class="card-img-top img-fluid"
+            style="height: 280px; object-fit: cover"
+          />
+          <img
+            src="{% static 'main/images/nestable/info-chart.jpg' %}"
+            alt="nestable Pallet"
+            class="card-img-top img-fluid"
+            style="height: 50px; object-fit: cover"
+          />
+
+          <div class="card-body d-flex flex-column justify-content-end mt-auto">
+            <h5 class="card-title fw-bold">Standard flat light duty</h5>
+            <a
+              href="{% url 'light_flat' %}"
+              class="btn btn-success btn-lg w-100"
+              >View Pallets</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. nestable  -->
+      <div class="col-md-4">
+        <div
+          class="card border-0 shadow-sm h-100 hover-lift transition"
+          style="height: 500px; display: flex; flex-direction: column"
+        >
+          <img
+            src="{% static 'main/images/flat-top-hd/k1300x1300x150.jpg' %}"
+            alt="Flat top pallet HD"
+            class="card-img-top img-fluid"
+            style="height: 280px; object-fit: cover"
+          />
+          <img
+            src="{% static 'main/images/flat-top-hd/info-chart.jpg' %}"
+            alt="nestable Pallet"
+            class="card-img-top img-fluid"
+            style="height: 50px; object-fit: cover"
+          />
+          <div class="card-body d-flex flex-column justify-content-end mt-auto">
+            <h5 class="card-title fw-bold">Heavy duty flat top</h5>
+            <a
+              href="{% url 'flat_top_heavyduty' %}"
+              class="btn btn-success btn-lg w-100"
+              >View Pallets</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          class="card border-0 shadow-sm h-100 hover-lift transition"
+          style="height: 500px; display: flex; flex-direction: column"
+        >
+          <img
+            src="{% static 'main/images/nestable/f1200x1200x135.jpg' %}"
+            alt="nestable Pallet"
+            class="card-img-top img-fluid"
+            style="height: 280px; object-fit: cover"
+          />
+          <img
+            src="{% static 'main/images/nestable/info-chart.jpg' %}"
+            alt="nestable Pallet"
+            class="card-img-top img-fluid"
+            style="height: 50px; object-fit: cover"
+          />
+          <div class="card-body d-flex flex-column justify-content-end mt-auto">
+            <h5 class="card-title fw-bold">Nestable</h5>
+            <a href="{% url 'nestable' %}" class="btn btn-success btn-lg w-100"
+              >View Pallets</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

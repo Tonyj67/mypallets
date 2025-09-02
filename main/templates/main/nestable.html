@@ -1,0 +1,216 @@
+{% extends "main/base.html" %} {% load static %} {% block title %}Euro Pallets |
+Plastic Pallets SA{% endblock %} {% block content %}
+
+<!-- HERO BANNER -->
+<section
+  class="hero text-light text-center py-5"
+  style="
+    background: url('{% static 'main/images/warehouse-hero.jpg' %}') no-repeat
+      center center / cover;
+    position: relative;
+  "
+>
+  <div
+    style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    "
+  ></div>
+  <div class="container" style="position: relative; z-index: 2">
+    <h1 class="display-5 fw-bold">Nestable Pallets</h1>
+    <p class="lead">• Export use • Ground use</p>
+    <a href="{% url 'products' %}" class="btn btn-secondary btn-lg"
+      >← Back to Products</a
+    >
+  </div>
+</section>
+
+<!-- PALLETS GRID -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- 1.Nestable -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 hover-lift transition">
+          <img
+            src="{% static 'main/images/nestable/A1100x1100.jpg' %}"
+            alt="Light duty1"
+            class="card-img-top"
+            style="height: 280px; object-fit: cover"
+            class="card-body"
+          />
+          <h5 class="card-title">Size ------ 1100 mm x 1100 mm ------</h5>
+          <div class="card-body">
+            <h5 class="card-title">Nestable</h5>
+            <img
+              src="{% static 'main/images/nestable/3tcapacity-chart.jpg' %}"
+              alt="Load Capacity Chart for Grid 4t"
+              class="img-fluid w-100 mt-1"
+              style="max-height: 80px; object-fit: contain"
+            />
+            <a
+              href="https://wa.me/27713290606?text=Hi%20Plastic%20Pallets%20SA%2C%20I'm%20interested%20in%20the%20Light%20Grid%201."
+              target="_blank"
+              class="btn btn-success btn-lg w-100"
+            >
+              <i class="fab fa-whatsapp me-1"></i> Get Quote
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 2. Nestable-->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 hover-lift transition">
+          <img
+            src="{% static 'main/images/nestable/B1000x1000x140.jpg' %}"
+            alt="Euro Flat 1"
+            class="card-img-top"
+            style="height: 280px; object-fit: cover"
+          />
+          <h5 class="card-title">Size ------ 1000 mm x 1000 mm ------</h5>
+          <div class="card-body">
+            <h5 class="card-title">Nestable</h5>
+            <img
+              src="{% static 'main/images/nestable/1.5tcapacity-chart.jpg' %}"
+              alt="Load Capacity Chart for Grid 4t"
+              class="img-fluid w-100 mt-1"
+              style="max-height: 80px; object-fit: contain"
+            />
+            <a
+              href="https://wa.me/27713290606?text=Hi%20Plastic%20Pallets%20SA%2C%20I'm%20interested%20in%20the%20Euro%20Flat%201."
+              target="_blank"
+              class="btn btn-success btn-lg w-100"
+            >
+              <i class="fab fa-whatsapp me-1"></i> Get Quote
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. nestable -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 hover-lift transition">
+          <img
+            src="{% static 'main/images/nestable/c1000X1100X140.jpg' %}"
+            alt="nestable"
+            class="card-img-top"
+            style="height: 280px; object-fit: cover"
+          />
+          <h5 class="card-title">Size ------ 1000 mm x 1100 mm ------</h5>
+          <div class="card-body">
+            <h5 class="card-title">Nestable</h5>
+            <img
+              src="{% static 'main/images/nestable/1.5tcapacity-chart.jpg' %}"
+              alt="Load Capacity Chart for Grid 1.5t"
+              class="img-fluid w-100 mt-1"
+              style="max-height: 80px; object-fit: contain"
+            />
+            <a
+              href="https://wa.me/27713290606?text=Hi%20Plastic%20Pallets%20SA%2C%20I'm%20interested%20in%20the%20Euro%20Grid%202."
+              target="_blank"
+              class="btn btn-success btn-lg w-100"
+            >
+              <i class="fab fa-whatsapp me-1"></i> Get Quote
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Euro Flat 2 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 hover-lift transition">
+          <img
+            src="{% static 'main/images/nestable/D1150x750x150.jpg' %}"
+            alt="Euro Flat 2"
+            class="card-img-top"
+            style="height: 280px; object-fit: cover"
+          />
+          <h5 class="card-title">Size ------ 1150 mm x 750 mm ------</h5>
+          <div class="card-body">
+            <h5 class="card-title">Nestable</h5>
+            <img
+              src="{% static 'main/images/nestable/1.5tcapacity-chart.jpg' %}"
+              alt="Load Capacity Chart for nestable 1.5t"
+              class="img-fluid w-100 mt-1"
+              style="max-height: 80px; object-fit: contain"
+            />
+            <a
+              href="https://wa.me/27713290606?text=Hi%20Plastic%20Pallets%20SA%2C%20I'm%20interested%20in%20the%20Euro%20Flat%202."
+              target="_blank"
+              class="btn btn-success btn-lg w-100"
+            >
+              <i class="fab fa-whatsapp me-1"></i> Get Quote
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. nestable -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 hover-lift transition">
+          <img
+            src="{% static 'main/images/nestable/E1200x800x135.jpg' %}"
+            alt="nestable"
+            class="card-img-top"
+            style="height: 280px; object-fit: cover"
+          />
+          <h5 class="card-title">Size ------ 1200 mm x 800 mm ------</h5>
+          <div class="card-body">
+            <h5 class="card-title">Nestable</h5>
+            <img
+              src="{% static 'main/images/nestable/1.5tcapacity-chart.jpg' %}"
+              alt="Load Capacity Chart for nestable 1.5t"
+              class="img-fluid w-100 mt-1"
+              style="max-height: 80px; object-fit: contain"
+            />
+            <a
+              href="https://wa.me/27713290606?text=Hi%20Plastic%20Pallets%20SA%2C%20I'm%20interested%20in%20the%20Euro%20Grid%203."
+              target="_blank"
+              class="btn btn-success btn-lg w-100"
+            >
+              <i class="fab fa-whatsapp me-1"></i> Get Quote
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Nestable -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 hover-lift transition">
+          <img
+            src="{% static 'main/images/nestable/f1200x1200x135.jpg' %}"
+            alt="Euro Flat 3"
+            class="card-img-top"
+            style="height: 260px; object-fit: cover"
+          />
+          <h5 class="card-title">
+            Size ------ 1200 mm x 1200 mm x 135 mm ------
+          </h5>
+          <div class="card-body">
+            <h5 class="card-title">Nestable</h5>
+            <img
+              src="{% static 'main/images/nestable/1.5tcapacity-chart.jpg' %}"
+              alt="Load Capacity Chart for Grid 1.5t"
+              class="img-fluid w-100 mt-1"
+              style="max-height: 80px; object-fit: contain"
+            />
+            <a
+              href="https://wa.me/27713290606?text=Hi%20Plastic%20Pallets%20SA%2C%20I'm%20interested%20in%20the%20Euro%20Flat%203."
+              target="_blank"
+              class="btn btn-success btn-lg w-100"
+            >
+              <i class="fab fa-whatsapp me-1"></i> Get Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
